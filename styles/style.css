@@ -1,5 +1,4 @@
 body {
-    font-family: Raleway, sans-serif;
     font-weight: normal;
     font-size: 20px;
 }
@@ -148,7 +147,7 @@ body {
 
 .bet-button {
     min-width: 256px;
-    font-family: inherit;
+    font-family: Raleway, sans-serif;
     border: 1px solid #FFFFFF;
     background: transparent;
     color: #FFFFFF;
