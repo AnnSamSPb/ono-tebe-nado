@@ -11,8 +11,8 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <ul class="header__links-list">
+      <nav>
+        <ul class="header__menu header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
             <a class="header__link header__link_active" href="#0">главная</a>
           </li>
@@ -24,18 +24,16 @@
           </li>
         </ul>
       </nav>
-      <div class="header__logo">
-        <a>      
-          <img 
-            class="header__logo-image" 
-            src="./images/logo-black.svg" 
-            alt="Логотип проекта - надпись'Оно тебе надо' черными буквами на белом фоне">
-        </a>
-      </div>
-      <address class="address header__address">
+      <a class="header__logo">      
+        <img 
+          class="header__logo-image" 
+          src="./images/logo-black.svg" 
+          alt="Логотип проекта - надпись'Оно тебе надо' черными буквами на белом фоне">
+      </a>
+      <address class="address header__address no-letter-spacing">
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a><br>
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
-        наб. Принсенграхт 263- 265, Амстердам
+        наб. Принсенграхт 263- <br>265, Амстердам
       </address>
     </header>
     <main>
@@ -56,22 +54,22 @@
       <section class="lots">
         <h2 class="lots__heading text__transform_uppercase">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_film">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card">
+              <article class="card  card_type_film">
                 <div class="overlay"></div>
-                <h4 class="card__title text__transform_uppercase">Фильм режиссёра, который бросил киношколу</h4>
+                <h3 class="card__title text__transform_uppercase">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
                 </p>
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item  card_type_book">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card">
+              <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h4 class="card__title text__transform_uppercase">Книга, где описан один скучный день из жизни рекламного агента</h4>
+                <h3 class="card__title text__transform_uppercase">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
                   В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
@@ -81,11 +79,11 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_picture">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#0">
-              <article class="card">
+              <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h4 class="card__title text__transform_uppercase">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+                <h3 class="card__title text__transform_uppercase">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
                   Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, 
@@ -104,11 +102,9 @@
           src="./images/logo-white.svg" 
           alt="Логотип проекта - надпись'Оно тебе надо' белыми буквами на черном фоне">
         </div>
-        <div class="about__title">
-          <h2 class="about__title text__transform_uppercase">Об аукционе</h2>
-        </div>
+        <h2 class="about__title text__transform_uppercase">Об аукционе</h2>
         <div class="about__text">
-          <p class="about__text-paragraph-first">
+          <p>
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
             В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они 
             казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или 
@@ -116,7 +112,7 @@
             Когда в эти вещи не верил никто, продолжали верить их создатели. 
             И сейчас эти лоты стали культовыми.
           </p>
-          <p class="about__text-paragraph-second">
+          <p>
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого 
             антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
             Потому что кому нужен дневник девочки-подростка или картина, которую может 
